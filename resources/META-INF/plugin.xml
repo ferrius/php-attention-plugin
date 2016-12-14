@@ -1,0 +1,44 @@
+<idea-plugin version="2">
+    <id>com.ferrius.phpStorm.phpattention</id>
+    <name>PHP Attention</name>
+    <version>1.0</version>
+    <vendor email="stnk2009@mail.ru" url="http://www.yourcompany.com">Ferrius</vendor>
+
+    <description><![CDATA[
+      It displays various interesting specific php behavior like null return, false on error and so on
+    ]]></description>
+
+    <change-notes>
+
+    </change-notes>
+
+    <idea-version since-build="141.0"/>
+
+    <depends>com.jetbrains.php</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <localInspection language="PHP"
+                         shortName="ReturnFalseInspection"
+                         displayName="Possible false return"
+                         groupPath="PHP,Php Attention"
+                         groupName="Probable bugs"
+                         enabledByDefault="true"
+                         level="WEAK_WARNING"
+                         implementationClass="com.ferrius.phpStorm.phpattention.ReturnFalseInspection"/>
+
+        <localInspection language="PHP"
+                         shortName="ReturnNullInspection"
+                         displayName="Possible null return"
+                         groupPath="PHP,Php Attention"
+                         groupName="Probable bugs"
+                         enabledByDefault="true"
+                         level="WEAK_WARNING"
+                         implementationClass="com.ferrius.phpStorm.phpattention.ReturnNullInspection"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>

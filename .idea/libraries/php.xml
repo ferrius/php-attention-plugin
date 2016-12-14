@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="php">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/soft/PhpStorm-163.9735.1/plugins/php/lib/php.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
