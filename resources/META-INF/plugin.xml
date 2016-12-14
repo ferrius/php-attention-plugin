@@ -2,10 +2,10 @@
     <id>com.ferrius.phpStorm.phpattention</id>
     <name>PHP Attention</name>
     <version>1.0</version>
-    <vendor email="stnk2009@mail.ru" url="http://www.yourcompany.com">Ferrius</vendor>
+    <vendor email="stnk2009@mail.ru" url="http://www.yourcompany.com">ferrius</vendor>
 
     <description><![CDATA[
-      It displays various interesting specific php behavior like null return, false on error and so on
+      Method calls and some common php functions may return null or false that should be checked. This simple plugin help you don't forget do it. This inspection should be seen as a note rather than warning. It is better to create your own inspection severity type.
     ]]></description>
 
     <change-notes>
